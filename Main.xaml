@@ -61,7 +61,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Seletores" sap:VirtualizedContainerService.HintSize="884,2098" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Seletores" sap:VirtualizedContainerService.HintSize="884,2212" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -69,6 +69,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment DisplayName="RPA Challange - Comment" sap:VirtualizedContainerService.HintSize="842,74" sap2010:WorkflowViewState.IdRef="Comment_1" Text="RPA Challange: https://www.rpachallenge.com/" />
     <ui:Comment DisplayName="VIVO - Comment" sap:VirtualizedContainerService.HintSize="842,55" sap2010:WorkflowViewState.IdRef="Comment_6" Text="&#xA;VIVO: https://meuvivoempresas.vivo.com.br" />
+    <ui:Comment DisplayName="Fake Person Generator - Comment" sap:VirtualizedContainerService.HintSize="842,74" sap2010:WorkflowViewState.IdRef="Comment_9" Text="Fake Person Generator: https://www.fakepersongenerator.com/" />
     <Parallel DisplayName="Seletores e Ui Explorer - Parallel" sap:VirtualizedContainerService.HintSize="842,158" sap2010:WorkflowViewState.IdRef="Parallel_1">
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Seletores workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Seletores.xaml">
         <ui:InvokeWorkflowFile.Arguments>
@@ -103,7 +104,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:Comment DisplayName="Exercício 1 - Comment" sap:VirtualizedContainerService.HintSize="334,475" sap2010:WorkflowViewState.IdRef="Comment_7" Text="Entre no site: https://www.fakepersongenerator.com/ e faça um robô que colete os dados de 10 pessoas geradas no site. Os dados devem ser coletados e colocados todos em um arquivo .XLSX do Excel. As informações retiradas devem ser o nome, data de nascimento, cidade, telefone celular e e-mail.&#xD;&#xA;&#xD;&#xA;Todo o robô deve ser 100% autônomo (não atendido, deve abrir o Browser e coletar as informações das 10 pessoas e fechar o Browser logo em seguida).&#xD;&#xA;&#xD;&#xA;O que será avaliado:&#xD;&#xA;&#xD;&#xA;* A organização do projeto;&#xD;&#xA;* Os seletores;&#xD;&#xA;* Os nomes das variáveis e das atividades;&#xD;&#xA;* A forma de como os dados foram coletados (se eles vieram brutos ou processados)." />
-      <ui:Comment DisplayName="Exercício 2 - Comment" sap:VirtualizedContainerService.HintSize="334,536" sap2010:WorkflowViewState.IdRef="Comment_8" Text="Entre no site: https://www.rpachallenge.com/ e preencha os campos das respectivas informações tiradas do arquivo Excel do exercício 2.&#xD;&#xA;&#xD;&#xA;O exercício deve ser realizado usando 2 vezes cada um dos métodos abaixo:&#xD;&#xA;&#xD;&#xA;* Âncora: Utilizando a âncoragem automática da UiPath;&#xD;&#xA;* Anchor Base: Para referência o campo pela posição relativa da âncora;&#xD;&#xA;* Computer Vision: Utilizando a imagem da tela para achar o campo e digitar nele. &#xD;&#xA;OBSERVAÇÃO: Utilize a API Key rZJ9x7tdaU8GhN1H5zAiH2xfdUuTl6AwmPQI3FEje5GaNT4NIpsZwdNBwkRDILZr8HBKiRNB6pE3nOzTc4uWmQ==&#xD;&#xA;&#xD;&#xA;Não é obrigatório mas caso queira tentar, tente preencher pelo menos 1 campo utilizando o Find Children:&#xD;&#xA;&#xD;&#xA;* Find Children : Para coletar a lista de elementos filhos do conteiner e escrevendo apenas no elemento filho do tipo INPUT." />
+      <ui:Comment DisplayName="Exercício 2 - Comment" sap:VirtualizedContainerService.HintSize="334,536" sap2010:WorkflowViewState.IdRef="Comment_8" Text="Entre no site: https://www.rpachallenge.com/ e preencha os campos das respectivas informações tiradas do arquivo Excel do exercício 2.&#xD;&#xA;&#xD;&#xA;O exercício deve ser realizado usando 2 vezes cada um dos métodos abaixo:&#xD;&#xA;&#xD;&#xA;* Âncora: Utilizando a âncoragem automática da UiPath;&#xD;&#xA;* Anchor Base: Para referência o campo pela posição relativa da âncora;&#xD;&#xA;* Computer Vision: Utilizando a imagem da tela para achar o campo e digitar nele. &#xD;&#xA;OBSERVAÇÃO: Utilize a API Key rZJ9x7tdaU8GhN1H5zAiH2xfdUuTl6AwmPQI3FEje5GaNT4NIpsZwdNBwkRDILZr8HBKiRNB6pE3nOzTc4uWmQ==&#xD;&#xA;&#xD;&#xA;Não é obrigatório mas caso queira tentar: preencha pelo menos 1 campo utilizando o Find Children:&#xD;&#xA;&#xD;&#xA;* Find Children : Para coletar a lista de elementos filhos do conteiner e escrevendo apenas no elemento filho do tipo INPUT." />
     </Sequence>
   </Sequence>
 </Activity>

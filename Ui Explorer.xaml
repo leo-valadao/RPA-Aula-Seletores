@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Ui_Explorer" sap:VirtualizedContainerService.HintSize="986,1599" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Ui_Explorer" sap:VirtualizedContainerService.HintSize="1246,1691" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -55,7 +55,7 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Ui Explorer" sap:VirtualizedContainerService.HintSize="376,1534" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Ui Explorer" sap:VirtualizedContainerService.HintSize="376,1626" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -218,10 +218,10 @@
         </ui:Click.Target>
       </ui:Click>
     </Sequence>
-    <Sequence DisplayName="Opções" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Opções" sap:VirtualizedContainerService.HintSize="334,370" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -232,7 +232,7 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:Comment DisplayName="Estruturas da UI - Comment" sap:VirtualizedContainerService.HintSize="334,418" sap2010:WorkflowViewState.IdRef="Comment_8" Text="Ferramentas utiliadas para selecionar elementos de tipos de UI diferentes no caso onde a seleção padrão de seletores da Ui Path não funcione. Existem 3 tipos de Estruturas de UI:&#xD;&#xA;&#xD;&#xA;1 - Padrão (Default): Tipo de estrutura de UI padrão utilizada pela Ui Path para encontrar os elementos, funciona normalmente na maioria de todos os aplicativos.&#xD;&#xA;&#xD;&#xA;2 - Active Accessibility: Tipos de estrutura de UI antigas utilizados pela Microsoft para aplicativos mais antigos e para sistemas de legado (sistemas/aplicativos antigos que permanecem em operação atualmente).&#xD;&#xA;&#xD;&#xA;3 - Automação da IU: Tipos de estrutura de UI também criados pela Microsoft para aplicativos mais modernos e atuais." />
+        <ui:Comment DisplayName="Estruturas da UI - Comment" sap:VirtualizedContainerService.HintSize="334,418" sap2010:WorkflowViewState.IdRef="Comment_8" Text="Ferramentas utiliadas para selecionar elementos de tipos de UI diferentes no caso onde a seleção padrão de seletores da Ui Path não funcione. Existem 3 tipos de Estruturas de UI:&#xA;&#xA;1 - Padrão (Default): Tipo de estrutura de UI padrão utilizada pela Ui Path para encontrar os elementos, funciona normalmente na maioria de todos os aplicativos.&#xA;&#xA;2 - Active Accessibility: Tipos de estrutura de UI antigas utilizados pela Microsoft para aplicativos mais antigos e para sistemas de legado (sistemas/aplicativos antigos que permanecem em operação atualmente).&#xA;&#xA;3 - Automação da IU: Tipos de estrutura de UI também criados pela Microsoft para aplicativos mais modernos e atuais." />
         <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Estruturas de UI - Click " sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
           <ui:Click.CursorPosition>
             <ui:CursorPosition Position="Center">
@@ -294,7 +294,7 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:Comment DisplayName="Seletor de Acionador - Comment" sap:VirtualizedContainerService.HintSize="334,55" sap2010:WorkflowViewState.IdRef="Comment_11" Text="// Write your comments in the Text property" />
+        <ui:Comment DisplayName="Seletor de Acionador - Comment" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="Comment_11" Text="Opção para quando o seletor for usando em um escopo de Trigger, geralmente usado para robôs atendidos." />
         <ui:TriggerScope DisplayName="Seletor de Acionador - Trigger Scope" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
           <ui:TriggerScope.Action>
             <ActivityAction x:TypeArguments="ui:EventInfoTriggerArgs">
@@ -367,68 +367,6 @@
         </ui:Click.CursorPosition>
         <ui:Click.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="daddadbf-2dac-46aa-93ef-c398f07e0715" InformativeScreenshot="aa557ce56ae4e76846478b3da27d6542" Selector="&lt;wnd app='uiexplorer.exe' cls='HwndWrapper*' title='Explorador da Interface de Utilizador' /&gt;&lt;ctrl automationid='DockSite.PART_DockHost__SplitContainer[0]__SplitContainer[0]__To*' /&gt;">
-            <ui:Target.TimeoutMS>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:Target.TimeoutMS>
-            <ui:Target.WaitForReady>
-              <InArgument x:TypeArguments="ui:WaitForReady" />
-            </ui:Target.WaitForReady>
-          </ui:Target>
-        </ui:Click.Target>
-      </ui:Click>
-    </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment sap:VirtualizedContainerService.HintSize="334,55" sap2010:WorkflowViewState.IdRef="Comment_12" Text="// Write your comments in the Text property" />
-      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
-        <ui:Click.CursorPosition>
-          <ui:CursorPosition Position="Center">
-            <ui:CursorPosition.OffsetX>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:CursorPosition.OffsetX>
-            <ui:CursorPosition.OffsetY>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:CursorPosition.OffsetY>
-          </ui:CursorPosition>
-        </ui:Click.CursorPosition>
-        <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="daddadbf-2dac-46aa-93ef-c398f07e0715">
-            <ui:Target.TimeoutMS>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:Target.TimeoutMS>
-            <ui:Target.WaitForReady>
-              <InArgument x:TypeArguments="ui:WaitForReady" />
-            </ui:Target.WaitForReady>
-          </ui:Target>
-        </ui:Click.Target>
-      </ui:Click>
-    </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_16">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment sap:VirtualizedContainerService.HintSize="334,55" sap2010:WorkflowViewState.IdRef="Comment_13" Text="// Write your comments in the Text property" />
-      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
-        <ui:Click.CursorPosition>
-          <ui:CursorPosition Position="Center">
-            <ui:CursorPosition.OffsetX>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:CursorPosition.OffsetX>
-            <ui:CursorPosition.OffsetY>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:CursorPosition.OffsetY>
-          </ui:CursorPosition>
-        </ui:Click.CursorPosition>
-        <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="daddadbf-2dac-46aa-93ef-c398f07e0715">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>

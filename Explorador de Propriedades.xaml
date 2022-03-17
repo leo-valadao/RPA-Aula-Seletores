@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Explorador_de_Propriedades" sap:VirtualizedContainerService.HintSize="691,865" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Explorador_de_Propriedades" sap:VirtualizedContainerService.HintSize="692,1138" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -50,7 +50,7 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Explorador de Propriedades" sap:VirtualizedContainerService.HintSize="376,800" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence DisplayName="Explorador de Propriedades" sap:VirtualizedContainerService.HintSize="376,1073" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="Element_FirstName" />
       <Variable x:TypeArguments="x:String" Name="TesteSetWebAttribute" />
@@ -62,7 +62,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="First Name - Find Element " FoundElement="[Element_FirstName]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
       <ui:WaitUiElementAppear.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54b37df4-c4df-42f2-8c1a-e58238c24d6e" InformativeScreenshot="5910a794a2f668292c592cc0b3732c32" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' aaname='First Name' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54b37df4-c4df-42f2-8c1a-e58238c24d6e" InformativeScreenshot="d4fbe141eba154880dac37b1044e01bd" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' aaname='First Name' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -73,9 +73,25 @@
       </ui:WaitUiElementAppear.Target>
     </ui:WaitUiElementAppear>
     <ui:WaitAttribute TimeoutMS="{x:Null}" Attribute="aaname" AttributeValue="[&quot;First Name&quot;]" DisplayName="First Name - Visibility - Wait Attribute" Element="[Element_FirstName]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="WaitAttribute_1" />
+    <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerhtml" DisplayName="Teste - Get Attribute " sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+      <ui:GetAttribute.Result>
+        <OutArgument x:TypeArguments="x:String">[TesteSetWebAttribute]</OutArgument>
+      </ui:GetAttribute.Result>
+      <ui:GetAttribute.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d617045-8fd9-4a86-95dc-1dd1064cca38" InformativeScreenshot="16357dc4e8b3108cd17f47b2792c4391" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' aaname='Teste' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetAttribute.Target>
+    </ui:GetAttribute>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Teste - Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[TesteSetWebAttribute]" />
     <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="innerhtml" DisplayName="First Name - Set Web Attribute " sap:VirtualizedContainerService.HintSize="334,162" sap2010:WorkflowViewState.IdRef="SetWebAttribute_1" Value="Teste">
       <ui:SetWebAttribute.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b35a32f7-1edc-41c3-937e-22bf11129e33" InformativeScreenshot="5910a794a2f668292c592cc0b3732c32" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' aaname='First Name' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b35a32f7-1edc-41c3-937e-22bf11129e33" InformativeScreenshot="d4fbe141eba154880dac37b1044e01bd" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' aaname='First Name' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -90,7 +106,7 @@
         <OutArgument x:TypeArguments="x:String">[TesteSetWebAttribute]</OutArgument>
       </ui:GetAttribute.Result>
       <ui:GetAttribute.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d617045-8fd9-4a86-95dc-1dd1064cca38" InformativeScreenshot="a3a98b032161b28b8a43ec3696408ae5" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d617045-8fd9-4a86-95dc-1dd1064cca38" InformativeScreenshot="16357dc4e8b3108cd17f47b2792c4391" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='LABEL' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

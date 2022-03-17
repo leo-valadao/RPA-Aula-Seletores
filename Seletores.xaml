@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Seletores" sap:VirtualizedContainerService.HintSize="986,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Seletores" sap:VirtualizedContainerService.HintSize="692,1562" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -50,16 +50,16 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Aula - Seletores" sap:VirtualizedContainerService.HintSize="376,636" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence DisplayName="Aula - Seletores" sap:VirtualizedContainerService.HintSize="538,2962" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment DisplayName="O Que São Seletores - Comment" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Seletores são um recursos que permite a identificação específica de uma elemento na interface do usuário." />
-    <ui:Comment DisplayName="Exemplos Bássicos - Comment" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="Comment_2" Text="Alguns exemplos de seletores são botões, campos de preenchimento, listas e textos da página ou do app.&#xA;" />
-    <Sequence DisplayName="Seletores Estáticos" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <ui:Comment DisplayName="O Que São Seletores - Comment" sap:VirtualizedContainerService.HintSize="496,95" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Seletores são um recursos que permite a identificação específica de uma elemento na interface do usuário." />
+    <ui:Comment DisplayName="Exemplos Bássicos - Comment" sap:VirtualizedContainerService.HintSize="496,95" sap2010:WorkflowViewState.IdRef="Comment_2" Text="Alguns exemplos de seletores são botões, campos de preenchimento, listas e textos da página ou do app.&#xA;" />
+    <Sequence DisplayName="Seletores Estáticos" sap:VirtualizedContainerService.HintSize="496,68" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -90,24 +90,24 @@
         </ui:Click.Target>
       </ui:Click>
     </Sequence>
-    <Sequence DisplayName="Seletores Dinâmicos" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence DisplayName="Seletores Dinâmicos" sap:VirtualizedContainerService.HintSize="496,461" sap2010:WorkflowViewState.IdRef="Sequence_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment DisplayName="Seletores Dinâmicos - Comment" sap:VirtualizedContainerService.HintSize="376,150" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Seletores Dinâmicos - São seletores que mudam de acordo com cada execução, ondem nunca será exatamente o mesmo seletor de antes, podendo receber uma variável ou âncora como referência para encontrar a interface alvo." />
-      <Sequence DisplayName="Com Âncora" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <ui:Comment DisplayName="Seletores Dinâmicos - Comment" sap:VirtualizedContainerService.HintSize="334,153" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Seletores Dinâmicos - São seletores que mudam de acordo com cada execução, ondem nunca será exatamente o mesmo seletor de antes, podendo receber uma variável ou âncora como referência para encontrar a interface alvo." />
+      <Sequence DisplayName="Com Âncora" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Sequence_12">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ui:Highlight HighlightTime="{x:Null}" Color="Gold" DisplayName="First Name - Highlight " sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Highlight_1">
           <ui:Highlight.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04d011b0-ac6c-4e14-8585-41d235cf11cb" InformativeScreenshot="a1522d01f505da597461788187f1a0d5" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl aaname='First Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;">
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04d011b0-ac6c-4e14-8585-41d235cf11cb" InformativeScreenshot="b375c4ff245f4e7df39308b71f7ff2c5" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl aaname='First Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;">
               <ui:Target.TimeoutMS>
                 <InArgument x:TypeArguments="x:Int32" />
               </ui:Target.TimeoutMS>
@@ -118,13 +118,17 @@
           </ui:Highlight.Target>
         </ui:Highlight>
       </Sequence>
-      <Sequence DisplayName="Com Variável" sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence DisplayName="Com Variável" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Sequence_13">
         <Sequence.Variables>
-          <Variable x:TypeArguments="x:String" Name="Cidade" />
+          <Variable x:TypeArguments="x:String" Name="Cidade">
+            <Variable.Default>
+              <Literal x:TypeArguments="x:String">Belo Horizonte - MG</Literal>
+            </Variable.Default>
+          </Variable>
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -136,9 +140,19 @@
             <InArgument x:TypeArguments="x:String">Belo Horizonte - MG</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:Highlight HighlightTime="{x:Null}" Color="Gold" DisplayName="Cidade - Highlight " sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Highlight_2">
-          <ui:Highlight.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04d011b0-ac6c-4e14-8585-41d235cf11cb" InformativeScreenshot="b3f8dd5dd65d850436194fd7bc6d99af" Selector="[String.Format(&quot;&lt;html app='chrome.exe' title='Vivo Empresas - Site Oficial | Banda Larga, Móvel e mais' /&gt;&lt;webctrl aaname='{0}' tag='SPAN' /&gt;&quot;, Cidade)]">
+        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Cidade - Click " sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4756430-dc1e-4225-b455-5f4663967fdc" InformativeScreenshot="edf20bbb5d40b610e64565e9947968e2" Selector="[String.Format(&quot;&lt;html app='chrome.exe' title='Vivo Empresas - Site Oficial | Banda Larga, Móvel e mais' /&gt;&lt;webctrl tag='SPAN' aaname='{0}' /&gt;&quot;, Cidade)]">
               <ui:Target.TimeoutMS>
                 <InArgument x:TypeArguments="x:Int32" />
               </ui:Target.TimeoutMS>
@@ -146,18 +160,18 @@
                 <InArgument x:TypeArguments="ui:WaitForReady" />
               </ui:Target.WaitForReady>
             </ui:Target>
-          </ui:Highlight.Target>
-        </ui:Highlight>
+          </ui:Click.Target>
+        </ui:Click>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="Protheus " sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="Protheus " sap:VirtualizedContainerService.HintSize="496,1991" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Histórico - Type Into " sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Mensagem de Teste!">
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Histórico - Type Into " sap:VirtualizedContainerService.HintSize="454,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Mensagem de Teste!">
         <ui:TypeInto.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0d73906-b083-4b08-853f-168bbdfce507" InformativeScreenshot="97eb4cfcd6816a35695ced7b026a24bb" Selector="&lt;wnd app='smartclient.exe' cls='Qt5QWindowIcon' title='TOTVS Educacional (TOTVS)*' /&gt;&lt;ctrl name='M-&amp;gt;E2_XHIST' role='editable text' /&gt;">
             <ui:Target.TimeoutMS>
@@ -169,10 +183,10 @@
           </ui:Target>
         </ui:TypeInto.Target>
       </ui:TypeInto>
-      <Sequence DisplayName="Clicks - Pesquisar Conta" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
+      <Sequence DisplayName="Clicks - Pesquisar Conta" sap:VirtualizedContainerService.HintSize="454,406" sap2010:WorkflowViewState.IdRef="Sequence_15">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -222,7 +236,7 @@
           </ui:Click.Target>
         </ui:Click>
       </Sequence>
-      <Sequence DisplayName="Get Text - Banco, Agência e Conta" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence DisplayName="Get Text - Banco, Agência e Conta" sap:VirtualizedContainerService.HintSize="454,589" sap2010:WorkflowViewState.IdRef="Sequence_16">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="ProtheusBanco" />
           <Variable x:TypeArguments="x:String" Name="ProtheusAgencia" />
@@ -230,7 +244,7 @@
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -281,7 +295,7 @@
         </ui:GetValue>
         <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Banco, Agência e Conta - Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Banco: &quot;+ProtheusBanco+Environment.NewLine+&#xA;&quot;Agência: &quot;+ProtheusBanco+Environment.NewLine+&#xA;&quot;Conta: &quot;+ProtheusConta]" />
       </Sequence>
-      <ui:CommentOut DisplayName="SELECT ITEM NÃO FUNCIONA - Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut DisplayName="SELECT ITEM NÃO FUNCIONA - Comment Out" sap:VirtualizedContainerService.HintSize="454,650" sap2010:WorkflowViewState.IdRef="CommentOut_1">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="418,572" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
@@ -356,7 +370,7 @@
         </ui:CommentOut.Body>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
